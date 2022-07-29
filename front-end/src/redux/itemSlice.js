@@ -20,7 +20,7 @@ export const addItem = createAsyncThunk(
  
         const response = await axios.post('http://127.0.0.1:8000/api/add_item',item);
         
-        if(response.status ==200){
+        if(response.status === 200){
             Swal.fire({
                 title: "Item",
                 text: "Has been Added Successfully",
